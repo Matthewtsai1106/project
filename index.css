@@ -1,0 +1,163 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
+
+body {
+    font-family: Arial, 'Noto Serif TC', sans-serif;
+    font-size: 14pt;
+    
+}
+
+.large-logo{
+    margin-top: 55px;
+    /* position: relative; */
+}
+.large-logo.scrolled{
+    height: 0px;
+}
+
+/* 導覽頁 */
+.navbar{
+    background-color: #fff;
+}
+.navbar.scrolled{
+    margin-top: 0;
+    
+}
+
+.navbar .small-logo{
+    width: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled .small-logo{
+    width: 318px;
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    color: red !important;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+.nav-item{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.login {
+    margin-top: 10px;
+    text-align: right;
+    margin-left: 20px;
+}
+
+/* 內容區 */
+#content {
+    margin-top: 10px;
+    padding: 100px 0;
+    /* position: relative; */
+}
+
+.col-md-12 {
+    margin-bottom: 10px;
+}
+
+.shopping-details {
+    margin: 5px 0;
+}
+
+/* 內容區-col-md-2 */
+.row .col-md-2 .sidebar,
+.accordion-button {
+    border: 2px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+
+.sidebar {
+    padding: 5px;
+}
+
+/* 下拉表單區 */
+.accordion-button {
+    font-size: 1.5vw;
+}
+
+.accordion-button {
+    background-color: antiquewhite;
+}
+
+.accordion-body {
+    padding: 0px;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table td {
+    border-top: none;
+    border-bottom: 1px solid #dee2e6;
+    padding-left: 2rem;
+    font-size: 0.8vw;
+}
+
+td>em {
+    margin-right: 5px;
+}
+
+/* 內容區-col-md-10 */
+
+#aboutme {
+    background-color: #f3bf0c;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#last-data {
+    height: 100px;
+    background-color: #f3bf0c;
+    padding-top: 10px;
+}
+
+.carousel-inner {
+    margin-bottom: 10px;
+}
+
+.carousel.carousel-item {
+    height: 500px;
+}
+
+.carousel.carousel-item img {
+    min-height: 500px;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.ratio {
+    margin-bottom: 10px;
+}
+
+.dropdown:hover>.dropdown-menu,
+.dropend:hover>.dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+    margin-left: 0.125em;
+    margin-right: 80%;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+}
+
+.badge.text-bg-info{
+    font-size: 10%;
+    color: #fff !important;
+}
+
+@media screen and (min-width:769px) {
+    .dropend:hover>.dropdown-menu {
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+}
